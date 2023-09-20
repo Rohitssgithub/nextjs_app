@@ -19,6 +19,9 @@ export default function Home({ children }) {
         <Link href='/about'>Go to about page</Link>
         <br />
         <Link href='/studentList'>Go to student page</Link>
+        <br />
+        <Link href='/productlist'>Go to product page</Link>
+
         <button onClick={() => navigatefun('/login')}>Go</button>
       </main>
     </>

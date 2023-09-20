@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const page = () => {
     return (
@@ -16,6 +17,7 @@ const page = () => {
                     <Link href="/studentList/3">3</Link>
                 </li>
             </ul>
+
         </>
     )
 }

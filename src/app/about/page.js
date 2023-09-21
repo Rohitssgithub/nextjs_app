@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 export default function page() {
     return (
         <>
+
             <h1>About page</h1>
             <Link href="/about/student" >Go to student page</Link>
             <br /> <br />
@@ -21,3 +22,4 @@ export function generateMetadata({ params }) {
         title: 'about page'
     }
 }
+

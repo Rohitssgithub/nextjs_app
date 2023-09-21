@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
-const page = () => {
+export default function page() {
     return (
         <>
             <h1>About page</h1>
@@ -16,4 +16,8 @@ const page = () => {
     )
 }
 
-export default page
+export function generateMetadata({ params }) {
+    return {
+        title: 'about page'
+    }
+}

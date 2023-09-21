@@ -3,7 +3,11 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { Roboto } from 'next/font/google';
 
+const roboto = Roboto({
+  weight: '100', subsets: ['latin'], display: 'swap'
+})
 
 export default function Home({ children }) {
   let router = useRouter()
@@ -23,16 +27,15 @@ export default function Home({ children }) {
         <Link href='/studentList'>Go to student page</Link>
         <br />
         <Link href='/productlist'>Go to product page</Link>
-
-
         <button onClick={() => navigatefun('/login')}>Go</button>
+        <h1 className={roboto.className}>Next js</h1>
       </main>
-      <Image
+      {/* <Image
         src='https://media.istockphoto.com/id/1466479719/photo/couple-choosing-a-color-for-the-walls-while-remodeling-their-house.webp?b=1&s=170667a&w=0&k=20&c=geAo9ts26EopF14-BDU916gcU8hJztNPlEM0D0VS860='
         alt="Description of the image"
         width={300}
         height={200}
-      />
+      /> */}
     </>
   )
 }
